@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body id="formulario" class="auto">
+    <!--nav-->
+    <nav class="auto">
+        <img src="/assets/M5-logo-azul.svg" alt="logo" id="logoform">
+        <div>
+            <a href="/index.html">HOME</a>
+        </div>
+        <div>
+            <a class="activo" href="/contacto.html">CONTACTO</a>
+        </div>
+    </nav>    
+    <!--form-->        
+    <form action="/contacto.php" method="post">
+        <p id="first" class="slab">¿Queres que nos contactemos con vos?</p>    
+        <p id="second">Dejanos tu consulta:</p>        
+        <label for="nombre">Nombre completo</label>
+        <br>
+        <input type="text" required name="nombre">        
+        <br>  
+        <label for="mail">Email</label>
+        <br>
+        <input type="email" name="mail" placeholder="usuario@ejemplo.com">      
+        <br>       
+        <label for="comentario">Comentario</label>
+        <br>
+        <textarea name="comentario" required ></textarea>       
+        <br>
+        <input type="reset" value="Resetear" class="button , slab">
+        <input type="submit" id="submit" class="button , slab">            
+    </form>   
+</body>
